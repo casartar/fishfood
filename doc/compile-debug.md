@@ -18,7 +18,7 @@ projektfolder/
 ```
 
 
-Wir folgenden dem Guide [Getting Started with Raspberry Pi Pico](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf)
+Wir folgen dem Guide [Getting Started with Raspberry Pi Pico](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf)
 
 
 
