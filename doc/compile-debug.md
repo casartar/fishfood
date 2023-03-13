@@ -115,6 +115,8 @@ Evtl. sind udev-Rules nötig, um das CMSIS-DAP Device read-write zu machen.
 ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="0004", MODE="666", GROUP="uucp"
 ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="000c", MODE="666", GROUP="uucp"
 ```
+Danach dann \
+`sudo udevadm control --reload` ausführen
 
 
 ### 4.3 openocd starten
@@ -132,4 +134,9 @@ Wenn der Aufruf klappt, bietet OpenOCD einen Socket auf  Port 3333 an, auf den G
 ### 4.4 Integration in VScode
 Wir folgen der [Anleitung bei Digikey](https://www.digikey.de/de/maker/projects/raspberry-pi-pico-and-rp2040-cc-part-2-debugging-with-vs-code/470abc7efb07432b82c95f6f67f184c0)
 
+Nötige Schritte:
+* VScode Extension `Cortex-Debug` installieren
+* VScode Extension für cmake und c/c++ Support sollten eh installiert sein. Da muss man evtl. was manuell installieren, weil kaputt.
+* Datei `.vscode/launch.json` anlegen
+* Datei `.vscode/setting.json` anlegen bzw editieren
 
