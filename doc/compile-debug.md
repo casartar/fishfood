@@ -120,9 +120,11 @@ ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="000c", MODE="666", GROUP="uucp"
 ### 4.3 openocd starten
 
 OpenOCD Aufruf wenn ne picoprobe verwendet wird:
+
 `openocd -f interface/cmsis-dap.cfg -c "adapter speed 5000" -f target/rp2040.cfg -s tcl`
 
 OpenOCD Aufruf wenn ne Segger J-Link probe verwendet wird:
+
 `openocd -f interface/jlink.cfg -c "adapter speed 5000" -f target/rp2040.cfg -s tcl`
 
 Wenn der Aufruf klappt, bietet OpenOCD einen Socket auf  Port 3333 an, auf den GDB connecten kann.
