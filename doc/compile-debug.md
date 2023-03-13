@@ -99,9 +99,16 @@ Evtl. sind udev-Rules nötig, um das CMSIS-DAP Device read-write zu machen.
 
 * Mit `lsusb` prüfen, welches bus device die probe ist
 * mit `ls -l` nachgucken ob das bus device rw ist, z.B. /dev/bus/usb/001/006
-* Falls nicht muss eine udev-Rule eingebaut werden, siehe Beispiel
+* Falls nicht muss eine udev-Rule eingebaut werden, siehe Beispiel /etc/udev/rules.d/60-openocd.rules
+* Die group ist nach lokaler Situation zu wählen, gebräuchlich sind `uucp`, `dialout` oder `plugdev`. Der user muss member dieser Gruppe sein.
 
-
+```
+# File /etc/udev/rules.d/60-openocd.rules
+# Raspberry Pi Picoprobe
+# Ekki, 2023-03-12 fuer openocd picoprobe
+ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="0004", MODE="666", GROUP="uucp"
+ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="000c", MODE="666", GROUP="uucp"
+```
 
 
 ### 4.3 openocd starten
