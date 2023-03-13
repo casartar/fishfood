@@ -118,7 +118,14 @@ ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="000c", MODE="666", GROUP="uucp"
 
 
 ### 4.3 openocd starten
-Wenn alles klappt erzeugt das einen Socket, auf den GDB zugreifen kann.
+
+OpenOCD Aufruf wenn ne picoprobe verwendet wird:
+`openocd -f interface/cmsis-dap.cfg -c "adapter speed 5000" -f target/rp2040.cfg -s tcl`
+
+OpenOCD Aufruf wenn ne Segger J-Link probe verwendet wird:
+`openocd -f interface/jlink.cfg -c "adapter speed 5000" -f target/rp2040.cfg -s tcl`
+
+Wenn der Aufruf klappt, bietet OpenOCD einen Socket auf  Port 3333 an, auf den GDB connecten kann.
 
 ### 4.4 Integration in VScode
 Wir folgen der [Anleitung bei Digikey](https://www.digikey.de/de/maker/projects/raspberry-pi-pico-and-rp2040-cc-part-2-debugging-with-vs-code/470abc7efb07432b82c95f6f67f184c0)
