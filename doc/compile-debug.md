@@ -85,14 +85,24 @@ cd <projektfolder>
 git clone https://github.com/raspberrypi/openocd.git --branch rp2040 --recursive --depth=1
 cd openocd
 ./bootstrap
-./configure --enable-ftdi --enable-sysfsgpio --enable-bcm2835gpio
+./configure [--enable-ftdi] [--enable-sysfsgpio] [--enable-bcm2835gpio] [--enable-cmsis-dap]
 make -j4
 sudo make install
 ```
 
-Der letzte Schritt ist nicht unbedingt nötig, falls man seine Distro-abhängige Installation von OpenOCD nicht zerschiessen will. Falls man das also nicht installiert, muss man die custom-OpenOCD Version mit Pfad aufrufen und auch später den kompletten Pfad zum executable in den Launch-Files für VScode angeben.
+Der letzte Schritt (sudo make install) ist nicht unbedingt nötig, falls man seine Distro-abhängige Installation von OpenOCD nicht zerschiessen will. Falls man das also nicht installiert, muss man die custom-OpenOCD Version mit Pfad aufrufen und auch später den kompletten Pfad zum executable in den Launch-Files für VScode angeben.
+
+Die `--enable-*` Optionen von configure sind nicht notwendig, diese features werden per Default sowieso alle eingeschaltet. Wichtig: Output von configure kontrollieren, dort müssen die gewünschten features mit 'yes (auto)' oder 'yes' auftauchen.
 
 ### 4.2 Probe anschliessen
+Evtl. sind udev-Rules nötig, um das CMSIS-DAP Device read-write zu machen.
+
+* Mit `lsusb` prüfen, welches bus device die probe ist
+* mit `ls -l` nachgucken ob das bus device rw ist, z.B. /dev/bus/usb/001/006
+* Falls nicht muss eine udev-Rule eingebaut werden, siehe Beispiel
+
+
+
 
 ### 4.3 openocd starten
 Wenn alles klappt erzeugt das einen Socket, auf den GDB zugreifen kann.
