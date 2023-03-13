@@ -43,7 +43,13 @@ git clone https://github.com/casartar/fishfood.git
 export PICO_SDK_PATH=~/<path_to_projektfolder>/pico/pico-sdk/
 ```
 
+### 1.2 pico-sdk aktualisieren, falls nötig
 
+```
+cd <projektfolder>/pico/pico-sdk/
+git pull
+git submodule update
+```
 
 ## 2. cmake und crossdev Tools installieren.
 Der Kram ist bei Arch in den normalen Repos enthalten, nix AUR oder so. Manjaro?
