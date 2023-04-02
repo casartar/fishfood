@@ -19,7 +19,7 @@ https://opensource.org/licenses/MIT. */
 #define TMC_INTERNAL_RSENSE 0
 // Rsense value in Ohms - Jellfish is 220mOhm, Starfish is 120mOhm
 #ifdef JELLYFISH
-#define TMC_RSENSE 0.220f
+#define TMC_RSENSE 0.120f
 #endif
 #ifdef STARFISH
 #define TMC_RSENSE 0.120f
@@ -57,7 +57,7 @@ https://opensource.org/licenses/MIT. */
 // Sensorless homing stall detection threshold
 // 0 to 255, higher is more sensitive
 #define X_HOMING_SENSITIVITY 100
-#define X_HOMING_VELOCITY_MM_S 200.0f
+#define X_HOMING_VELOCITY_MM_S 100.0f
 #define X_HOMING_ACCELERATION_MM_S2 5000.0f
 #define X_HOMING_DISTANCE_MM 500.0f
 #define X_HOMING_BOUNCE_MM 20.0f
@@ -81,7 +81,7 @@ https://opensource.org/licenses/MIT. */
 #define Y_STEPS_PER_MM 160.0f
 // Sensorless homing stall detection threshold
 // 0 to 255, higher is more sensitive
-#define Y_HOMING_SENSITIVITY 150
+#define Y_HOMING_SENSITIVITY 140
 #define Y_HOMING_VELOCITY_MM_S X_HOMING_VELOCITY_MM_S
 #define Y_HOMING_ACCELERATION_MM_S2 X_HOMING_ACCELERATION_MM_S2
 #define Y_HOMING_DISTANCE_MM 500.0f
@@ -103,13 +103,14 @@ https://opensource.org/licenses/MIT. */
 #define Z_DEFAULT_VELOCITY_MM_S 200.0f
 #define Z_DEFAULT_ACCELERATION_MM_S2 1000.0f
 #define Z_STEPS_PER_MM 160.0f
-#define Z_HOMING_SENSITIVITY 130
-#define Z_HOMING_VELOCITY_MM_S 50.0f
+#define Z_HOMING_SENSITIVITY 50
+#define Z_HOMING_VELOCITY_MM_S 30.0f
 #define Z_HOMING_ACCELERATION_MM_S2 2000.0f
 #define Z_HOMING_DISTANCE_MM 100.0f
-#define Z_HOMING_BOUNCE_MM 5.0f
-#define Z_HOMING_DIR -1
-#define Z_HOME_ENDSTOP PIN_IN_2
+#define Z_HOMING_BOUNCE_MM 5.0fs
+#define Z_HOMING_DIR 1
+// Try sensorless homing for Z
+// #define Z_HOME_ENDSTOP PIN_IN_2
 #endif
 
 /*
