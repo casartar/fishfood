@@ -107,7 +107,7 @@ https://opensource.org/licenses/MIT. */
 #define Z_HOMING_VELOCITY_MM_S 30.0f
 #define Z_HOMING_ACCELERATION_MM_S2 2000.0f
 #define Z_HOMING_DISTANCE_MM 100.0f
-#define Z_HOMING_BOUNCE_MM 5.0fs
+#define Z_HOMING_BOUNCE_MM 5.0f
 #define Z_HOMING_DIR 1
 // Try sensorless homing for Z
 // #define Z_HOME_ENDSTOP PIN_IN_2
