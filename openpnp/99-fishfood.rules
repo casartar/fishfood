@@ -1,0 +1,4 @@
+ACTION=="add", ENV{ID_VENDOR_ID}=="cafe", ENV{ID_MODEL_ID}=="aa68", SYMLINK+="starfish"
+ACTION=="add", ENV{ID_VENDOR_ID}=="cafe", ENV{ID_MODEL_ID}=="aa69", SYMLINK+="jellyfish"
+
+
