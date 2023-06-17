@@ -6,6 +6,8 @@
 #include <stddef.h>
 #include <stdint.h>
 
+#define LINEAR_AXIS_LUT_COUNT 512
+
 struct LinearAxisMovement {
     // Direction of travel, +1 or -1.
     int8_t direction;
@@ -19,6 +21,8 @@ struct LinearAxisMovement {
     int32_t total_step_count;
     // Number of steps taken so far.
     int32_t steps_taken;
+    // acceleration look-up table
+    uint16_t lut[LINEAR_AXIS_LUT_COUNT];
 };
 
 struct LinearAxis {
@@ -91,3 +95,7 @@ static inline void LinearAxis_stop(struct LinearAxis* m) { m->_current_move = (s
 bool LinearAxis_timed_step(struct LinearAxis* m);
 
 void LinearAxis_direct_step(struct LinearAxis* m);
+
+void LinearAxis_lookup_step_interval(struct LinearAxis* m);
+
+uint32_t LinearAxisMovement_calculate_lut_entry(struct LinearAxis* a, uint32_t steps);
