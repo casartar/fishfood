@@ -2,6 +2,9 @@
    <part fiducial-vision-id="FVS_Default" id="FIDUCIAL-HOME" name="Homing Fiducial - Do Not Delete" height-units="Millimeters" height="0.0" package-id="FIDUCIAL-1X2" speed="1.0" pick-retry-count="0"/>
    <part fiducial-vision-id="FVS_Stock_T" id="LED_0603_1608Metric-LED_Small" height-units="Millimeters" height="0.5" package-id="LED_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
    <part fiducial-vision-id="FVS17087d17ad3597ea" id="Fiducial_1mm_Mask3mm-Fiducial" height-units="Millimeters" height="0.0" package-id="Fiducial_1mm_Mask3mm" speed="1.0" pick-retry-count="0"/>
-   <part fiducial-vision-id="FVS_Stock_T" id="R_0603_1608Metric-R_Small" height-units="Millimeters" height="0.5" package-id="R_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part bottom-vision-id="BVS17752e0e95e2b65a" fiducial-vision-id="FVS_Stock_T" id="R_0603_1608Metric-R_Small" height-units="Millimeters" height="0.5" package-id="R_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
    <part fiducial-vision-id="FVS1766ab3a1f104d36" id="Secondary-Fiducial" height-units="Millimeters" height="0.0" package-id="FIDUCIAL-1X2" speed="1.0" pick-retry-count="0"/>
+   <part fiducial-vision-id="FVS_Stock_T" id="C_0805_2012Metric-100nF" height-units="Millimeters" height="0.5" package-id="C_0805_2012Metric" speed="1.0" pick-retry-count="0"/>
+   <part bottom-vision-id="BVS177f478fef8fa150" id="LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm-WS2812B" height-units="Millimeters" height="1.5" package-id="LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" speed="1.0" pick-retry-count="0"/>
+   <part fiducial-vision-id="FVS17087d17ad3597ea" id="Fiducial_1mm_Mask2mm-Fiducial" height-units="Millimeters" height="0.0" package-id="Fiducial_1mm_Mask2mm" speed="1.0" pick-retry-count="0"/>
 </openpnp-parts>
