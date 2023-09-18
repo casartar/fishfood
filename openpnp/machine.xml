@@ -10,7 +10,7 @@
             <soft-limit-high value="433.0" units="Millimeters"/>
             <safe-zone-low value="0.0" units="Millimeters"/>
             <safe-zone-high value="0.0" units="Millimeters"/>
-            <feedrate-per-second value="800.0" units="Millimeters"/>
+            <feedrate-per-second value="8000.0" units="Millimeters"/>
             <acceleration-per-second-2 value="1000.0" units="Millimeters"/>
             <jerk-per-second-3 value="0.0" units="Millimeters"/>
             <resolution>0.00625</resolution>
@@ -112,7 +112,7 @@
             <soft-limit-high value="487.0" units="Millimeters"/>
             <safe-zone-low value="0.0" units="Millimeters"/>
             <safe-zone-high value="0.0" units="Millimeters"/>
-            <feedrate-per-second value="800.0" units="Millimeters"/>
+            <feedrate-per-second value="8000.0" units="Millimeters"/>
             <acceleration-per-second-2 value="1000.0" units="Millimeters"/>
             <jerk-per-second-3 value="0.0" units="Millimeters"/>
             <resolution>0.00625</resolution>
@@ -339,7 +339,7 @@
                      <camera-matrix length="9">2194.3913614963008, 0.0, 628.0899923554304, 0.0, 2187.1790712431957, 415.29225116126645, 0.0, 0.0, 1.0</camera-matrix>
                      <distortion-coefficients length="5">-0.25489748144227725, -2.0262371926417115, -0.007903946949951616, 0.003137093583016279, 13.726962835266017</distortion-coefficients>
                   </calibration>
-                  <advanced-calibration enabled="false" overriding-old-transforms-and-distortion-correction-settings="true" valid="false" data-available="true" alpha-percent="100" rotation-error-z="0.0" rotation-error-y="0.0" rotation-error-x="0.0" rms-error="0.0" desired-radial-lines-per-test-pattern="32" test-pattern-fill-fraction="0.9" walking-loop-gain="0.5" approximate-camera-f="0.0" mirrored="1.0" apparent-motion-direction="-1.0" width-fov="0.0" height-fov="0.0" virtual-width-fov="0.0" virtual-height-fov="0.0" disable-tilt-correction="false" disable-distortion-correction="false" disable-tangential-distortion-correction="true" version="1.4">
+                  <advanced-calibration enabled="false" overriding-old-transforms-and-distortion-correction-settings="false" valid="false" data-available="true" alpha-percent="100" rotation-error-z="0.0" rotation-error-y="0.0" rotation-error-x="0.0" rms-error="0.0" desired-radial-lines-per-test-pattern="32" test-pattern-fill-fraction="0.9" walking-loop-gain="0.5" approximate-camera-f="0.0" mirrored="1.0" apparent-motion-direction="-1.0" width-fov="0.0" height-fov="0.0" virtual-width-fov="0.0" virtual-height-fov="0.0" disable-tilt-correction="false" disable-distortion-correction="false" disable-tangential-distortion-correction="true" version="1.4">
                      <camera-matrix length="9">0.0, 0.0, 639.5, 0.0, 0.0, 359.5, 0.0, 0.0, 1.0</camera-matrix>
                      <distortion-coefficients length="5">0.0, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
                      <pipeline>
@@ -377,14 +377,14 @@
                   <back-light-compensation property="BackLightCompensation" value="1"/>
                   <brightness property="Brightness" value="0"/>
                   <contrast property="Contrast" value="128"/>
-                  <exposure property="Exposure" value="625" auto="false"/>
+                  <exposure property="Exposure" value="1" auto="false"/>
                   <focus property="Focus"/>
                   <gain property="Gain" value="0"/>
-                  <gamma property="Gamma" value="100"/>
+                  <gamma property="Gamma" value="72"/>
                   <hue property="Hue" value="0"/>
                   <power-line-frequency property="PowerLineFrequency" value="1"/>
                   <saturation property="Saturation" value="64"/>
-                  <sharpness property="Sharpness" value="5"/>
+                  <sharpness property="Sharpness" value="3"/>
                   <white-balance property="WhiteBalance" value="4600" auto="false"/>
                   <zoom property="Zoom"/>
                </camera>
@@ -418,12 +418,12 @@
             <location units="Millimeters" x="107.245" y="200.11" z="-29.35" rotation="0.0"/>
             <offsets units="Millimeters" x="0.0" y="-4.0" z="0.0" rotation="0.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR177f46f34581dece" name="ReferenceTrayFeeder" enabled="true" part-id="LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm-WS2812B" retry-count="3" feed-retry-count="3" pick-retry-count="0" tray-count-x="1" tray-count-y="15" feed-count="0">
-            <location units="Millimeters" x="11.23" y="198.708" z="-29.6" rotation="180.0"/>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR177f46f34581dece" name="ReferenceTrayFeeder" enabled="true" part-id="LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm-WS2812B" retry-count="3" feed-retry-count="3" pick-retry-count="0" tray-count-x="2" tray-count-y="14" feed-count="5">
+            <location units="Millimeters" x="25.23" y="198.708" z="-29.8" rotation="180.0"/>
             <offsets units="Millimeters" x="14.0" y="-8.0" z="0.0" rotation="0.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR178162f039ec3a03" name="ReferenceTrayFeeder" enabled="true" part-id="C_0805_2012Metric-100nF" retry-count="3" feed-retry-count="3" pick-retry-count="0" tray-count-x="2" tray-count-y="30" feed-count="27">
-            <location units="Millimeters" x="85.15" y="200.55" z="-28.4" rotation="0.0"/>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR178162f039ec3a03" name="ReferenceTrayFeeder" enabled="true" part-id="C_0805_2012Metric-100nF" retry-count="3" feed-retry-count="3" pick-retry-count="0" tray-count-x="2" tray-count-y="30" feed-count="41">
+            <location units="Millimeters" x="85.15" y="200.2" z="-28.4" rotation="0.0"/>
             <offsets units="Millimeters" x="11.0" y="-4.0" z="0.0" rotation="0.0"/>
          </feeder>
       </feeders>
@@ -521,7 +521,7 @@
          </actuator>
       </actuators>
       <part-alignments>
-         <part-alignment class="org.openpnp.machine.reference.vision.ReferenceBottomVision" bottom-vision-id="BVS17752e0e95e2b65a" enabled="true" pre-rotate="true" max-vision-passes="3" max-angular-offset="10.0" test-alignment-angle="33.0">
+         <part-alignment class="org.openpnp.machine.reference.vision.ReferenceBottomVision" bottom-vision-id="BVS17752e0e95e2b65a" enabled="true" pre-rotate="true" max-vision-passes="3" max-angular-offset="10.0" test-alignment-angle="27.0">
             <max-linear-offset value="1.0" units="Millimeters"/>
          </part-alignment>
       </part-alignments>
@@ -712,7 +712,7 @@
             <command type="CONNECT_COMMAND">
                <text><![CDATA[G21 ; Set millimeters mode]]></text>
                <text><![CDATA[G90 ; Set absolute positioning mode]]></text>
-               <text><![CDATA[M914 Z65]]></text>
+               <text><![CDATA[M914 Z60]]></text>
             </command>
          </driver>
       </drivers>
@@ -792,7 +792,7 @@
             <max-part-diameter value="5.0" units="Millimeters"/>
             <max-part-height value="10.0" units="Millimeters"/>
             <max-pick-tolerance value="1.0" units="Millimeters"/>
-            <calibration angle-subdivisions="6" allow-misdetections="6" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="false" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChange" background-calibration-method="BrightnessAndKeyColor" background-min-hue="182" background-max-hue="224" background-tol-hue="8" background-min-saturation="63" background-max-saturation="120" background-tol-saturation="8" background-min-value="34" background-max-value="159" background-tol-value="8" background-diagnostics="&lt;html&gt;Non-color-keyed background elements are quite dark. Perfect!&lt;br/&gt;&lt;hr/&gt;The key color is not consistent enough.&lt;br/&gt;Check camera white balance (see the Wiki).&lt;br/&gt;Clean the nozzle tip. If it is shiny, make it dull.&lt;br/&gt;Eliminate light sources that reflect on the nozzle tip..&lt;br/&gt;&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
+            <calibration angle-subdivisions="6" allow-misdetections="6" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="false" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChange" background-calibration-method="BrightnessAndKeyColor" background-min-hue="195" background-max-hue="206" background-tol-hue="8" background-min-saturation="63" background-max-saturation="89" background-tol-saturation="8" background-min-value="128" background-max-value="159" background-tol-value="8" background-diagnostics="&lt;html&gt;Non-color-keyed background elements are too bright.&lt;br/&gt;Try to eliminate highlights and reflections.&lt;br/&gt;Use a shade behind the nozzle.&lt;br/&gt;Renew the blackening of dark parts of the nozzle tip.&lt;br/&gt;Clean the nozzle tip. If it is shiny, make it dull.&lt;br/&gt;Eliminate light sources that reflect on the nozzle tip.&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
                <pipeline>
                   <stages>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="true" settle-option="Settle" count="1">
@@ -815,7 +815,7 @@
                <runout-compensation-lookup class="java.util.HashMap">
                   <entry>
                      <string>NOZ1710829fd33a0170</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.7198489540442357" center-y="-0.1439697908088472" radius="0.16225661084041076" phase-shift="-50.96448710125313" units="Millimeters" peak-error="0.04774079621591831" rms-error="0.031645046568159765"/>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.5998741283701964" center-y="-0.23395091006437657" radius="0.14471384551225544" phase-shift="150.25511870305778" units="Millimeters" peak-error="0.012663635280298714" rms-error="0.008540578834669481"/>
                   </entry>
                </runout-compensation-lookup>
                <minimum-detail-size value="0.2" units="Millimeters"/>
