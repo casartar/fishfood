@@ -1,4 +1,4 @@
 ACTION=="add", ENV{ID_VENDOR_ID}=="cafe", ENV{ID_MODEL_ID}=="aa68", SYMLINK+="starfish"
 ACTION=="add", ENV{ID_VENDOR_ID}=="cafe", ENV{ID_MODEL_ID}=="aa69", SYMLINK+="jellyfish"
-
+ACTION=="add", ENV{ID_VENDOR_ID}=="2341", ATTRS{serial}=="75834343839351813240", SYMLINK+="maxfeeder"
 

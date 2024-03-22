@@ -325,7 +325,7 @@
                </actuator>
             </actuators>
             <cameras>
-               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" axis-X-id="AXS169824381580efcb" axis-Y-id="AXS16982438158c4660" axis-Z-id="AXS171084434ad04ba5" axis-rotation-id="AXS171084470fa6d522" id="CAM1607555396816" name="Top" looking="Down" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Motion" settle-time-ms="2000" settle-timeout-ms="600" settle-threshold="1.0" settle-debounce="2" settle-full-color="false" settle-gaussian-blur="19" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="10.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.385321100917431" green-balance="1.0" blue-balance="1.0" red-gamma="1.048569247077107" green-gamma="0.9764108453612772" blue-gamma="0.9764108453612772" deinterlace="false" light-actuator-id="ACT1758087c94233303" allow-machine-actuators="true" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="HD USB Camera: HD USB Camera usb-0000:00:14.0-5.4" format-id="0" freeze-properties="true">
+               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" axis-X-id="AXS169824381580efcb" axis-Y-id="AXS16982438158c4660" axis-Z-id="AXS171084434ad04ba5" axis-rotation-id="AXS171084470fa6d522" id="CAM1607555396816" name="Top" looking="Down" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Motion" settle-time-ms="2000" settle-timeout-ms="600" settle-threshold="1.0" settle-debounce="2" settle-full-color="false" settle-gaussian-blur="19" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="10.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.385321100917431" green-balance="1.0" blue-balance="1.0" red-gamma="1.048569247077107" green-gamma="0.9764108453612772" blue-gamma="0.9764108453612772" deinterlace="false" light-actuator-id="ACT1758087c94233303" allow-machine-actuators="true" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="HD USB Camera: HD USB Camera usb-0000:00:14.0-5" format-id="0" freeze-properties="true">
                   <units-per-pixel units="Millimeters" x="0.013346596797629654" y="0.013274792645389548" z="-28.100000000000016" rotation="0.0"/>
                   <units-per-pixel-secondary units="Millimeters" x="0.013330927404309936" y="0.01332184639109174" z="0.0" rotation="0.0"/>
                   <camera-primary-z value="0.0" units="Millimeters"/>
@@ -383,9 +383,9 @@
                   <gamma property="Gamma" value="72"/>
                   <hue property="Hue" value="0"/>
                   <power-line-frequency property="PowerLineFrequency" value="1"/>
-                  <saturation property="Saturation" value="64"/>
+                  <saturation property="Saturation" value="1"/>
                   <sharpness property="Sharpness" value="3"/>
-                  <white-balance property="WhiteBalance" value="4600" auto="false"/>
+                  <white-balance property="WhiteBalance" value="2800" auto="false"/>
                   <zoom property="Zoom"/>
                </camera>
             </cameras>
@@ -418,17 +418,23 @@
             <location units="Millimeters" x="107.245" y="200.11" z="-29.35" rotation="0.0"/>
             <offsets units="Millimeters" x="0.0" y="-4.0" z="0.0" rotation="0.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR177f46f34581dece" name="ReferenceTrayFeeder" enabled="true" part-id="LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm-WS2812B" retry-count="3" feed-retry-count="3" pick-retry-count="0" tray-count-x="2" tray-count-y="14" feed-count="5">
-            <location units="Millimeters" x="25.23" y="198.708" z="-29.8" rotation="180.0"/>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR177f46f34581dece" name="ReferenceTrayFeeder" enabled="true" part-id="LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm-WS2812B" retry-count="3" feed-retry-count="3" pick-retry-count="0" tray-count-x="3" tray-count-y="15" feed-count="44">
+            <location units="Millimeters" x="11.03" y="199.108" z="-29.8" rotation="180.0"/>
             <offsets units="Millimeters" x="14.0" y="-8.0" z="0.0" rotation="0.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR178162f039ec3a03" name="ReferenceTrayFeeder" enabled="true" part-id="C_0805_2012Metric-100nF" retry-count="3" feed-retry-count="3" pick-retry-count="0" tray-count-x="2" tray-count-y="30" feed-count="41">
-            <location units="Millimeters" x="85.15" y="200.2" z="-28.4" rotation="0.0"/>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR178162f039ec3a03" name="ReferenceTrayFeeder" enabled="true" part-id="C_0805_2012Metric-100nF" retry-count="3" feed-retry-count="3" pick-retry-count="0" tray-count-x="6" tray-count-y="30" feed-count="101">
+            <location units="Millimeters" x="96.59" y="196.9" z="-26.6" rotation="0.0"/>
             <offsets units="Millimeters" x="11.0" y="-4.0" z="0.0" rotation="0.0"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17af8920372c5e06" name="ReferenceAutoFeeder" enabled="true" part-id="C_0805_2012Metric-100nF" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-value="0.0" post-pick-actuator-value="0.0" move-before-feed="false">
+            <location units="Millimeters" x="279.597" y="10.687" z="-28.6" rotation="0.0"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17bf36f3b6918191" name="ReferenceAutoFeeder" enabled="false" part-id="C_0805_2012Metric-100nF" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="N0" actuator-value="0.0" post-pick-actuator-value="0.0" move-before-feed="false">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </feeder>
       </feeders>
       <cameras>
-         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1614803235898" name="Bottom" looking="Up" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Motion" settle-time-ms="600" settle-timeout-ms="600" settle-threshold="1.0" settle-debounce="2" settle-full-color="false" settle-gaussian-blur="9" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="10.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.3971541755379994" flip-x="false" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.2074074074074075" green-balance="1.0" blue-balance="1.2635658914728682" red-gamma="1.096461810393734" green-gamma="0.949707560119174" blue-gamma="0.9620189471961047" deinterlace="false" light-actuator-id="ACT1605385237291" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="HD USB Camera: HD USB Camera usb-0000:00:14.0-4" format-id="0" freeze-properties="true">
+         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1614803235898" name="Bottom" looking="Up" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Motion" settle-time-ms="600" settle-timeout-ms="600" settle-threshold="1.0" settle-debounce="2" settle-full-color="false" settle-gaussian-blur="9" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="10.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.3971541755379994" flip-x="false" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.2074074074074075" green-balance="1.0" blue-balance="1.2635658914728682" red-gamma="1.096461810393734" green-gamma="0.949707560119174" blue-gamma="0.9620189471961047" deinterlace="false" light-actuator-id="ACT1605385237291" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="HD USB Camera: HD USB Camera usb-0000:00:14.0-4.1" format-id="0" freeze-properties="true">
             <units-per-pixel units="Millimeters" x="0.034577004307597844" y="0.03529042806634972" z="0.0" rotation="0.0"/>
             <camera-primary-z value="-0.3400000000000034" units="Millimeters"/>
             <default-z value="-0.3400000000000034" units="Millimeters"/>
@@ -517,6 +523,12 @@
             <safe-z value="0.0" units="Millimeters"/>
          </actuator>
          <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT170524c73c5ed540" name="IndexFeederData" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+         </actuator>
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT17bf36b7928b9dcb" name="N0" value-type="Double" value-type-confirmed="true" default-on-double="4.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV17bf36b16200f327" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+         </actuator>
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT17bf38a5d9dcd0ab" name="N1" value-type="Double" value-type-confirmed="true" default-on-double="4.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV17bf36b16200f327" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="1">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </actuator>
       </actuators>
@@ -715,6 +727,24 @@
                <text><![CDATA[M914 Z60]]></text>
             </command>
          </driver>
+         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV17bf36b16200f327" name="MaxFeeder" motion-control-type="ToolpathFeedRate" communications="serial" connection-keep-alive="false" sync-initial-location="false" units="Millimeters" max-feed-rate="1000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="20000" connect-wait-time-milliseconds="3000" dollar-wait-time-milliseconds="50" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="false" compress-gcode="false" compression-excludes="[]&quot;" logging-gcode="false" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
+            <serial line-ending-type="LF" port-name="maxfeeder" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
+            <tcp line-ending-type="LF" ip-address="127.0.0.1" port="23" name="TcpCommunications"/>
+            <simulated line-ending-type="LF"/>
+            <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <command type="COMMAND_CONFIRM_REGEX">
+               <text><![CDATA[^ok.*]]></text>
+            </command>
+            <command type="COMMAND_ERROR_REGEX">
+               <text><![CDATA[^error.*]]></text>
+            </command>
+            <command head-mountable-id="ACT17bf36b7928b9dcb" type="ACTUATE_DOUBLE_COMMAND">
+               <text><![CDATA[M600 N{Index} F{DoubleValue}]]></text>
+            </command>
+            <command head-mountable-id="ACT17bf38a5d9dcd0ab" type="ACTUATE_DOUBLE_COMMAND">
+               <text><![CDATA[M600 N{Index} F{DoubleValue}]]></text>
+            </command>
+         </driver>
       </drivers>
       <discard-location units="Millimeters" x="27.896" y="39.282" z="30.0" rotation="0.0"/>
       <properties>
@@ -792,7 +822,7 @@
             <max-part-diameter value="5.0" units="Millimeters"/>
             <max-part-height value="10.0" units="Millimeters"/>
             <max-pick-tolerance value="1.0" units="Millimeters"/>
-            <calibration angle-subdivisions="6" allow-misdetections="6" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="false" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChange" background-calibration-method="BrightnessAndKeyColor" background-min-hue="195" background-max-hue="206" background-tol-hue="8" background-min-saturation="63" background-max-saturation="89" background-tol-saturation="8" background-min-value="128" background-max-value="159" background-tol-value="8" background-diagnostics="&lt;html&gt;Non-color-keyed background elements are too bright.&lt;br/&gt;Try to eliminate highlights and reflections.&lt;br/&gt;Use a shade behind the nozzle.&lt;br/&gt;Renew the blackening of dark parts of the nozzle tip.&lt;br/&gt;Clean the nozzle tip. If it is shiny, make it dull.&lt;br/&gt;Eliminate light sources that reflect on the nozzle tip.&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
+            <calibration angle-subdivisions="6" allow-misdetections="6" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="false" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChange" background-calibration-method="BrightnessAndKeyColor" background-min-hue="183" background-max-hue="225" background-tol-hue="8" background-min-saturation="65" background-max-saturation="120" background-tol-saturation="8" background-min-value="32" background-max-value="158" background-tol-value="8" background-diagnostics="&lt;html&gt;Non-color-keyed background elements are possibly too dark. &lt;br/&gt;Check camera exposure.&lt;br/&gt;&lt;hr/&gt;The key color is not consistent enough.&lt;br/&gt;Check camera white balance (see the Wiki).&lt;br/&gt;Clean the nozzle tip. If it is shiny, make it dull.&lt;br/&gt;Eliminate light sources that reflect on the nozzle tip..&lt;br/&gt;&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
                <pipeline>
                   <stages>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="true" settle-option="Settle" count="1">
@@ -812,12 +842,7 @@
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="7" enabled="true" prefix="runoutCalibration" suffix=".png"/>
                   </stages>
                </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap">
-                  <entry>
-                     <string>NOZ1710829fd33a0170</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.5998741283701964" center-y="-0.23395091006437657" radius="0.14471384551225544" phase-shift="150.25511870305778" units="Millimeters" peak-error="0.012663635280298714" rms-error="0.008540578834669481"/>
-                  </entry>
-               </runout-compensation-lookup>
+               <runout-compensation-lookup class="java.util.HashMap"/>
                <minimum-detail-size value="0.2" units="Millimeters"/>
                <offset-threshold-length value="6.0" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
